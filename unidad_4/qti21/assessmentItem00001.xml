@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
+    xmlns:ns9="http://www.imsglobal.org/xsd/apip/apipv1p0/imsapip_qtiv1p0"
+    xmlns:ns8="http://www.w3.org/1999/xlink" title="Pregunta 35"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd"
+    adaptive="false" timeDependent="false" identifier="QUE__20673700_35">
+
+  <responseDeclaration cardinality="multiple" baseType="identifier" identifier="RESPONSE">
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
+  </responseDeclaration>
+
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
+    <defaultValue><value>0</value></defaultValue>
+  </outcomeDeclaration>
+  <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue><value>0</value></defaultValue>
+  </outcomeDeclaration>
+
+  <itemBody>
+    <div>
+      <p>Camila obtiene un préstamo con cuotas iguales durante 12 meses. Cada cuota incluye un interés calculado sobre el saldo pendiente y un abono al capital. ¿Qué tipo de tabla de amortización está utilizando?</p>
+    </div>
+    <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
+      <simpleChoice identifier="answer_1" fixed="true">
+        <p>Tabla de amortización con cuotas constantes, porque la cuota es igual en cada período, aunque la composición varíe.</p>
+      </simpleChoice>
+      <simpleChoice identifier="answer_2" fixed="true">
+        <p>Tabla de amortización creciente, porque el abono al capital aumenta cada mes.</p>
+      </simpleChoice>
+      <simpleChoice identifier="answer_3" fixed="true">
+        <p>Tabla con interés anticipado, porque el interés se cobra al inicio del crédito.</p>
+      </simpleChoice>
+      <simpleChoice identifier="answer_4" fixed="true">
+        <p>Tabla de amortización decreciente, porque el interés se calcula sobre un saldo menor.</p>
+      </simpleChoice>
+    </choiceInteraction>
+  </itemBody>
+
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE"/>
+          <correct identifier="RESPONSE"/>
+        </match>
+        <setOutcomeValue identifier="SCORE">
+          <variable identifier="MAXSCORE"/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
+      </responseIf>
+      <responseElse>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
+      </responseElse>
+    </responseCondition>
+  </responseProcessing>
+
+  <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
+    <div>
+      <p>¡Muy bien! Tabla de amortización con cuotas constantes, porque la cuota es igual en cada período, aunque la composición varíe.</p>
+    </div>
+  </modalFeedback>
+
+  <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
+    <div>
+      <p>Te recomendamos revisar el tema 4.1 Cuotas constantes para validar este concepto.</p>
+    </div>
+  </modalFeedback>
+
+</assessmentItem>

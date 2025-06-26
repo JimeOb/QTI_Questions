@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
+    http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd"
+    identifier="QUE__20673700_4" title="Pregunta 4" adaptive="false" timeDependent="false">
+
+  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
+    <correctResponse><value>answer_1</value></correctResponse>
+  </responseDeclaration>
+
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
+    <defaultValue><value>0</value></defaultValue>
+  </outcomeDeclaration>
+
+  <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue><value>0</value></defaultValue>
+  </outcomeDeclaration>
+
+  <itemBody>
+    <div>
+      <p>Si la plataforma ofrece un crédito con TIIE en 9% y un margen de 5.2% ¿cuál sería la tasa total aplicada?</p>
+    </div>
+    <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
+      <simpleChoice identifier="answer_1">14.2% porque se suman el índice de referencia y el margen aplicado</simpleChoice>
+      <simpleChoice identifier="answer_2">13% porque es el promedio anual del sector</simpleChoice>
+      <simpleChoice identifier="answer_3">9%, porque es la TIIE actual</simpleChoice>
+      <simpleChoice identifier="answer_4">5.2%, porque es el adicional</simpleChoice>
+    </choiceInteraction>
+  </itemBody>
+
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE"/>
+          <correct identifier="RESPONSE"/>
+        </match>
+        <setOutcomeValue identifier="SCORE"><variable identifier="MAXSCORE"/></setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">correct_fb</baseValue></setOutcomeValue>
+      </responseIf>
+      <responseElse>
+        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">incorrect_fb</baseValue></setOutcomeValue>
+      </responseElse>
+    </responseCondition>
+  </responseProcessing>
+
+  <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
+    <div><p>Muy bien. La tasa total se calcula sumando la TIIE al margen aplicado por el prestamista.</p></div>
+  </modalFeedback>
+
+  <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
+    <div><p>Te recomendamos revisar el tema 5.2 Tasas de referencia nacionales, específicamente el cálculo de tasas variables.</p></div>
+  </modalFeedback>
+</assessmentItem>

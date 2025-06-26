@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
+    xmlns:ns9="http://www.imsglobal.org/xsd/apip/apipv1p0/imsapip_qtiv1p0"
+    xmlns:ns8="http://www.w3.org/1999/xlink" title="Pregunta 4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd"
+    adaptive="false" timeDependent="false" identifier="QUE__20673700_32">
+
+  <responseDeclaration cardinality="multiple" baseType="identifier" identifier="RESPONSE">
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
+  </responseDeclaration>
+
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
+    <defaultValue><value>0</value></defaultValue>
+  </outcomeDeclaration>
+  <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue><value>0</value></defaultValue>
+  </outcomeDeclaration>
+
+  <itemBody>
+    <div>
+      <p>Camila solicita un crédito con un período de gracia de tres meses en el que no debe pagar nada. ¿Cuál es una posible consecuencia financiera de esta decisión?</p>
+    </div>
+    <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
+      <simpleChoice identifier="answer_1" fixed="true">
+        <p>Los intereses se acumulan y aumentan el monto total del crédito.</p>
+      </simpleChoice>
+      <simpleChoice identifier="answer_2" fixed="true">
+        <p>El crédito se cancela automáticamente si no se paga en el primer trimestre.</p>
+      </simpleChoice>
+      <simpleChoice identifier="answer_3" fixed="true">
+        <p>Se reducen los intereses porque no hay pagos iniciales.</p>
+      </simpleChoice>
+      <simpleChoice identifier="answer_4" fixed="true">
+        <p>No hay ningún impacto financiero por aceptar la gracia.</p>
+      </simpleChoice>
+    </choiceInteraction>
+  </itemBody>
+
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE"/>
+          <correct identifier="RESPONSE"/>
+        </match>
+        <setOutcomeValue identifier="SCORE">
+          <variable identifier="MAXSCORE"/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
+      </responseIf>
+      <responseElse>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
+      </responseElse>
+    </responseCondition>
+  </responseProcessing>
+
+  <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
+    <div>
+      <p>¡Muy bien! Los intereses se acumulan y aumentan el monto total del crédito.</p>
+    </div>
+  </modalFeedback>
+
+  <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
+    <div>
+      <p>Te recomendamos revisar el tema 4.3 Interés anticipado para validar este concepto.</p>
+    </div>
+  </modalFeedback>
+
+</assessmentItem>

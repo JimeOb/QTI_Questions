@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
+    http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd"
+    identifier="QUE__20673700_3" title="Pregunta 3" adaptive="false" timeDependent="false">
+
+  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
+    <correctResponse><value>answer_1</value></correctResponse>
+  </responseDeclaration>
+
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
+    <defaultValue><value>0</value></defaultValue>
+  </outcomeDeclaration>
+
+  <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue><value>0</value></defaultValue>
+  </outcomeDeclaration>
+
+  <itemBody>
+    <div>
+      <p>¿Qué representa un aumento en la TIIE para el crédito ofrecido por la plataforma de crédito colectivo?</p>
+    </div>
+    <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
+      <simpleChoice identifier="answer_1">Un incremento en el costo total del crédito debido a su naturaleza variable</simpleChoice>
+      <simpleChoice identifier="answer_2">Una disminución del riesgo bancario</simpleChoice>
+      <simpleChoice identifier="answer_3">Una reducción automática del plazo</simpleChoice>
+      <simpleChoice identifier="answer_4">Un beneficio fiscal</simpleChoice>
+    </choiceInteraction>
+  </itemBody>
+
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE"/>
+          <correct identifier="RESPONSE"/>
+        </match>
+        <setOutcomeValue identifier="SCORE"><variable identifier="MAXSCORE"/></setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">correct_fb</baseValue></setOutcomeValue>
+      </responseIf>
+      <responseElse>
+        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">incorrect_fb</baseValue></setOutcomeValue>
+      </responseElse>
+    </responseCondition>
+  </responseProcessing>
+
+  <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
+    <div><p>Muy bien. Un aumento en la TIIE incrementa el costo del crédito variable, ya que es su base.</p></div>
+  </modalFeedback>
+
+  <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
+    <div><p>Te recomendamos revisar el tema 5.2 Tasas de referencia nacionales para entender el efecto de la TIIE en créditos variables.</p></div>
+  </modalFeedback>
+</assessmentItem>
