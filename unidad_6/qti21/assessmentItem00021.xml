@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
@@ -6,27 +6,33 @@
     identifier="QUE__20673700_21" title="Pregunta 21" adaptive="false" timeDependent="false">
 
   <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
-    <correctResponse><value>answer_1</value></correctResponse>
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
   </responseDeclaration>
 
   <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
   <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <itemBody>
     <div>
-      <p>Si Daniela desea saber el impacto total de comisiones y tasa sobre su préstamo ¿qué debe analizar?</p>
+      <p>¿Qué ventaja principal ofrecen los bonos del gobierno frente a los bonos corporativos?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1">El CPP de cada opción de crédito</simpleChoice>
-      <simpleChoice identifier="answer_2">El plazo total</simpleChoice>
-      <simpleChoice identifier="answer_3">La inflación del país destino</simpleChoice>
-      <simpleChoice identifier="answer_4">Tasa nominal</simpleChoice>
+      <simpleChoice identifier="answer_1">Mayor seguridad de pago debido al respaldo estatal</simpleChoice>
+      <simpleChoice identifier="answer_2">Están exentos de duración</simpleChoice>
+      <simpleChoice identifier="answer_3">Tienen mayor tasa de interés</simpleChoice>
+      <simpleChoice identifier="answer_4">Son bonos de tasa flotante</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -37,20 +43,30 @@
           <variable identifier="RESPONSE"/>
           <correct identifier="RESPONSE"/>
         </match>
-        <setOutcomeValue identifier="SCORE"><variable identifier="MAXSCORE"/></setOutcomeValue>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">correct_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="SCORE">
+          <variable identifier="MAXSCORE"/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
       </responseIf>
       <responseElse>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">incorrect_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
       </responseElse>
     </responseCondition>
   </responseProcessing>
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Muy bien. El CPP mide el impacto total de tasas y comisiones en un préstamo.</p></div>
+    <div>
+      <p>Correcto. El respaldo estatal hace más seguros a los bonos gubernamentales.</p>
+    </div>
   </modalFeedback>
 
   <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Te recomendamos revisar el tema 5.2 Tasas de referencia nacionales y cómo el CPP mide todos los costos del préstamo.</p></div>
+    <div>
+      <p>Te recomendamos revisar el tema 6.1 Tipos de bonos.</p>
+    </div>
   </modalFeedback>
 </assessmentItem>

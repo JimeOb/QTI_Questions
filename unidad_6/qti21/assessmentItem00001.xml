@@ -1,42 +1,38 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
-    xmlns:ns9="http://www.imsglobal.org/xsd/apip/apipv1p0/imsapip_qtiv1p0"
-    xmlns:ns8="http://www.w3.org/1999/xlink" title="Pregunta 1"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd"
-    adaptive="false" timeDependent="false" identifier="QUE__20673700_1">
-
-  <responseDeclaration cardinality="multiple" baseType="identifier" identifier="RESPONSE">
+<?xml version="1.0" ?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
+    http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd" 
+    identifier="QUE__20673700_1" title="Pregunta 1" adaptive="false" timeDependent="false">
+  
+  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
     <correctResponse>
       <value>answer_1</value>
     </correctResponse>
   </responseDeclaration>
 
   <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
+  
   <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
   <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <itemBody>
     <div>
-      <p>¿Qué indicador le permite conocer el costo total del préstamo incluyendo todos los cargos adicionales?</p>
+      <p>Alex Ruiz está considerando invertir en bonos del gobierno que ofrecen una tasa del 7% anual Si la tasa libre de riesgo teórica es del 6.25% ¿cuál es la prima de riesgo que está asumiendo?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1" fixed="true">
-        <p>El CPP porque incluye intereses, comisiones y gastos asociados.</p>
-      </simpleChoice>
-      <simpleChoice identifier="answer_2" fixed="true">
-        <p>Tasa nominal.</p>
-      </simpleChoice>
-      <simpleChoice identifier="answer_3" fixed="true">
-        <p>Tasa efectiva anual.</p>
-      </simpleChoice>
-      <simpleChoice identifier="answer_4" fixed="true">
-        <p>Tasa de fondeo bancario.</p>
-      </simpleChoice>
+      <simpleChoice identifier="answer_1">Una prima de riesgo de 0.75%, porque representa el exceso de retorno sobre la tasa sin riesgo</simpleChoice>
+      <simpleChoice identifier="answer_2">6.25%, porque es la tasa base</simpleChoice>
+      <simpleChoice identifier="answer_3">1.25%, porque es la diferencia contra la inflación</simpleChoice>
+      <simpleChoice identifier="answer_4">7.75%, porque se suma la prima</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -62,16 +58,15 @@
     </responseCondition>
   </responseProcessing>
 
-  <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
+  <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Muy bien. El CPP permite conocer el costo total de un préstamo al incluir intereses, comisiones y gastos asociados.</p>
+      <p>Correcto. La prima de riesgo es la diferencia entre la tasa ofrecida y la tasa libre de riesgo teórica</p>
     </div>
   </modalFeedback>
-
-  <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
+  
+  <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Te recomendamos revisar el tema 5.2 Tasas de referencia nacionales para comprender cómo el CPP refleja el costo total del crédito.</p>
+      <p>Te recomendamos revisar el tema 6.5 Análisis de la bolsa de valores</p>
     </div>
   </modalFeedback>
-
 </assessmentItem>

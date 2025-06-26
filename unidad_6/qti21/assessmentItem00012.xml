@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
@@ -6,27 +6,33 @@
     identifier="QUE__20673700_12" title="Pregunta 12" adaptive="false" timeDependent="false">
 
   <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
-    <correctResponse><value>answer_1</value></correctResponse>
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
   </responseDeclaration>
 
   <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
   <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <itemBody>
     <div>
-      <p>¿Qué ventaja ofrecen los bonos indexados a la inflación para el fondo de becas?</p>
+      <p>Un bono se cotiza por debajo de su valor nominal ¿qué puede implicar esto?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1">Protegen el valor real del capital frente a aumentos en el costo de vida</simpleChoice>
-      <simpleChoice identifier="answer_2">Reducen el tipo de cambio</simpleChoice>
-      <simpleChoice identifier="answer_3">Generan rendimientos más altos que CETES</simpleChoice>
-      <simpleChoice identifier="answer_4">Son más líquidos que los fondos en dólares</simpleChoice>
+      <simpleChoice identifier="answer_1">El bono ofrece un rendimiento mayor al de su tasa nominal</simpleChoice>
+      <simpleChoice identifier="answer_2">Está exento de impuestos</simpleChoice>
+      <simpleChoice identifier="answer_3">Se trata de un bono convertible</simpleChoice>
+      <simpleChoice identifier="answer_4">Ha vencido su plazo</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -37,20 +43,30 @@
           <variable identifier="RESPONSE"/>
           <correct identifier="RESPONSE"/>
         </match>
-        <setOutcomeValue identifier="SCORE"><variable identifier="MAXSCORE"/></setOutcomeValue>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">correct_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="SCORE">
+          <variable identifier="MAXSCORE"/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
       </responseIf>
       <responseElse>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">incorrect_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
       </responseElse>
     </responseCondition>
   </responseProcessing>
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Muy bien. Los bonos indexados a la inflación protegen el valor real del capital frente al alza en precios.</p></div>
+    <div>
+      <p>Muy bien. Cotizarse por debajo del valor nominal implica un rendimiento mayor al de su tasa nominal.</p>
+    </div>
   </modalFeedback>
 
   <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Te recomendamos revisar el tema 5.4 Las tasas libres de riesgo teórico, enfocándote en la protección inflacionaria.</p></div>
+    <div>
+      <p>Te recomendamos revisar el tema 6.1 Tipos de bonos.</p>
+    </div>
   </modalFeedback>
 </assessmentItem>

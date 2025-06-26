@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
@@ -6,27 +6,33 @@
     identifier="QUE__20673700_7" title="Pregunta 7" adaptive="false" timeDependent="false">
 
   <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
-    <correctResponse><value>answer_1</value></correctResponse>
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
   </responseDeclaration>
 
   <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
   <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <itemBody>
     <div>
-      <p>Si la plataforma reduce el margen a 4.5% pero la TIIE sube a 10.5% ¿cuál será la nueva tasa aplicada?</p>
+      <p>¿Cuál es un riesgo común en fondos comunes mal diversificados?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1">15% porque se suma la nueva TIIE al nuevo margen</simpleChoice>
-      <simpleChoice identifier="answer_2">10.5% porque la TIIE subió</simpleChoice>
-      <simpleChoice identifier="answer_3">14%, porque es la tasa promedio anterior</simpleChoice>
-      <simpleChoice identifier="answer_4">5.5%, por el margen ajustado</simpleChoice>
+      <simpleChoice identifier="answer_1">Concentración excesiva en un solo tipo de activo</simpleChoice>
+      <simpleChoice identifier="answer_2">Reducción del gasto de gestión</simpleChoice>
+      <simpleChoice identifier="answer_3">Ganancias por inflación</simpleChoice>
+      <simpleChoice identifier="answer_4">Pérdida de liquidez por el emisor</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -37,20 +43,30 @@
           <variable identifier="RESPONSE"/>
           <correct identifier="RESPONSE"/>
         </match>
-        <setOutcomeValue identifier="SCORE"><variable identifier="MAXSCORE"/></setOutcomeValue>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">correct_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="SCORE">
+          <variable identifier="MAXSCORE"/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
       </responseIf>
       <responseElse>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">incorrect_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
       </responseElse>
     </responseCondition>
   </responseProcessing>
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Muy bien. Al sumar la TIIE actual con el nuevo margen se obtiene la nueva tasa final del crédito.</p></div>
+    <div>
+      <p>Correcto. La concentración en un solo tipo de activo puede aumentar el riesgo del fondo.</p>
+    </div>
   </modalFeedback>
 
   <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Te recomendamos revisar el tema 5.2 Tasas de referencia nacionales para reforzar cómo se actualizan las tasas variables.</p></div>
+    <div>
+      <p>Te recomendamos revisar el tema 6.3 Fondos comunes.</p>
+    </div>
   </modalFeedback>
 </assessmentItem>

@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
@@ -6,27 +6,33 @@
     identifier="QUE__20673700_28" title="Pregunta 28" adaptive="false" timeDependent="false">
 
   <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
-    <correctResponse><value>answer_1</value></correctResponse>
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
   </responseDeclaration>
 
   <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
   <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <itemBody>
     <div>
-      <p>Si la inflación sube durante el crédito ¿qué efecto tendría sobre el valor real del pago mensual de Daniela con tasa fija?</p>
+      <p>¿Qué ocurre si un fondo común omite informar su composición real?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1">El pago pierde valor real beneficiando al deudor</simpleChoice>
-      <simpleChoice identifier="answer_2">No hay ningún cambio</simpleChoice>
-      <simpleChoice identifier="answer_3">El pago aumenta automáticamente</simpleChoice>
-      <simpleChoice identifier="answer_4">La tasa se ajusta al IPC</simpleChoice>
+      <simpleChoice identifier="answer_1">Se incurre en falta de transparencia que afecta la toma de decisiones</simpleChoice>
+      <simpleChoice identifier="answer_2">No se requiere informar si es de renta fija</simpleChoice>
+      <simpleChoice identifier="answer_3">Solo afecta a los gestores</simpleChoice>
+      <simpleChoice identifier="answer_4">El fondo se vuelve más rentable</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -37,20 +43,30 @@
           <variable identifier="RESPONSE"/>
           <correct identifier="RESPONSE"/>
         </match>
-        <setOutcomeValue identifier="SCORE"><variable identifier="MAXSCORE"/></setOutcomeValue>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">correct_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="SCORE">
+          <variable identifier="MAXSCORE"/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
       </responseIf>
       <responseElse>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">incorrect_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
       </responseElse>
     </responseCondition>
   </responseProcessing>
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Muy bien. La inflación reduce el valor real de los pagos fijos, beneficiando al deudor.</p></div>
+    <div>
+      <p>Muy bien. Omitir la composición afecta la transparencia y decisiones del inversionista.</p>
+    </div>
   </modalFeedback>
 
   <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Te recomendamos revisar el tema 5.1 Determinantes de las tasas de interés y el efecto de la inflación sobre el pago real.</p></div>
+    <div>
+      <p>Te recomendamos revisar el tema 6.5 Análisis de la bolsa de valores.</p>
+    </div>
   </modalFeedback>
 </assessmentItem>

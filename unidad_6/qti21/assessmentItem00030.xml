@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
@@ -6,27 +6,33 @@
     identifier="QUE__20673700_30" title="Pregunta 30" adaptive="false" timeDependent="false">
 
   <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
-    <correctResponse><value>answer_1</value></correctResponse>
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
   </responseDeclaration>
 
   <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
   <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <itemBody>
     <div>
-      <p>¿Qué elemento adicional debería analizar Daniela al comparar créditos educativos en pesos vs en dólares?</p>
+      <p>¿Por qué es importante conocer la duración de un bono antes de invertir?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1">El riesgo cambiario que puede encarecer el crédito si el peso se deprecia</simpleChoice>
-      <simpleChoice identifier="answer_2">El CPP sin considerar divisas</simpleChoice>
-      <simpleChoice identifier="answer_3">El rendimiento del banco</simpleChoice>
-      <simpleChoice identifier="answer_4">La duración del posgrado</simpleChoice>
+      <simpleChoice identifier="answer_1">Permite anticipar su sensibilidad ante cambios de tasas de interés</simpleChoice>
+      <simpleChoice identifier="answer_2">Porque evita pagar impuestos</simpleChoice>
+      <simpleChoice identifier="answer_3">Porque indica si se puede convertir en acciones</simpleChoice>
+      <simpleChoice identifier="answer_4">Porque define la fecha exacta de pago</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -37,20 +43,30 @@
           <variable identifier="RESPONSE"/>
           <correct identifier="RESPONSE"/>
         </match>
-        <setOutcomeValue identifier="SCORE"><variable identifier="MAXSCORE"/></setOutcomeValue>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">correct_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="SCORE">
+          <variable identifier="MAXSCORE"/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
       </responseIf>
       <responseElse>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">incorrect_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
       </responseElse>
     </responseCondition>
   </responseProcessing>
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Muy bien. El riesgo cambiario puede encarecer un crédito en dólares si el peso se deprecia.</p></div>
+    <div>
+      <p>Muy bien. La duración permite anticipar sensibilidad a los cambios de tasas.</p>
+    </div>
   </modalFeedback>
 
   <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Te recomendamos revisar el tema 5.3 Tasas de referencia internacionales para entender el impacto del riesgo cambiario.</p></div>
+    <div>
+      <p>Te recomendamos revisar el tema 6.2 Sensibilización sobre los bonos por cambios en las tasas de interés.</p>
+    </div>
   </modalFeedback>
 </assessmentItem>

@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
@@ -6,27 +6,33 @@
     identifier="QUE__20673700_19" title="Pregunta 19" adaptive="false" timeDependent="false">
 
   <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
-    <correctResponse><value>answer_1</value></correctResponse>
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
   </responseDeclaration>
 
   <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
   <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <itemBody>
     <div>
-      <p>Si la inflación supera el rendimiento nominal de los CETES ¿qué sucede con el valor real del fondo?</p>
+      <p>¿Qué estrategia es más adecuada si se anticipa un aumento en las tasas de interés?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1">Se reduce porque el rendimiento no cubre la pérdida del poder adquisitivo</simpleChoice>
-      <simpleChoice identifier="answer_2">Permanece constante</simpleChoice>
-      <simpleChoice identifier="answer_3">Aumenta, por el respaldo del gobierno</simpleChoice>
-      <simpleChoice identifier="answer_4">Solo afecta si hay devaluación</simpleChoice>
+      <simpleChoice identifier="answer_1">Reducir la duración promedio de la cartera</simpleChoice>
+      <simpleChoice identifier="answer_2">Invertir en bonos convertibles</simpleChoice>
+      <simpleChoice identifier="answer_3">Aumentar la inversión en papel comercial</simpleChoice>
+      <simpleChoice identifier="answer_4">Comprar más bonos de largo plazo</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -37,20 +43,30 @@
           <variable identifier="RESPONSE"/>
           <correct identifier="RESPONSE"/>
         </match>
-        <setOutcomeValue identifier="SCORE"><variable identifier="MAXSCORE"/></setOutcomeValue>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">correct_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="SCORE">
+          <variable identifier="MAXSCORE"/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
       </responseIf>
       <responseElse>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">incorrect_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
       </responseElse>
     </responseCondition>
   </responseProcessing>
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Muy bien. Si la inflación supera el rendimiento nominal, el valor real del fondo disminuye.</p></div>
+    <div>
+      <p>Correcto. Reducir la duración protege ante incrementos en tasas de interés.</p>
+    </div>
   </modalFeedback>
 
   <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Te recomendamos revisar el tema 5.1 Determinantes de las tasas de interés para analizar la inflación y su impacto real.</p></div>
+    <div>
+      <p>Te recomendamos revisar el tema 6.2 Sensibilización sobre los bonos por cambios en las tasas de interés.</p>
+    </div>
   </modalFeedback>
 </assessmentItem>

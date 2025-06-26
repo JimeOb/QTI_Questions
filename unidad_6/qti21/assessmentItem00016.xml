@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
@@ -6,27 +6,33 @@
     identifier="QUE__20673700_16" title="Pregunta 16" adaptive="false" timeDependent="false">
 
   <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
-    <correctResponse><value>answer_1</value></correctResponse>
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
   </responseDeclaration>
 
   <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
   <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <itemBody>
     <div>
-      <p>¿Qué representa la SOFR dentro de una estrategia de inversión internacional?</p>
+      <p>¿Qué ocurre cuando un fondo común invierte más del 70% de sus recursos en un solo sector?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1">Una tasa de referencia en dólares usada para valorar bonos y créditos seguros en EE UU</simpleChoice>
-      <simpleChoice identifier="answer_2">Un índice bursátil europeo</simpleChoice>
-      <simpleChoice identifier="answer_3">Un costo porcentual promedio</simpleChoice>
-      <simpleChoice identifier="answer_4">Un tipo de cambio bilateral</simpleChoice>
+      <simpleChoice identifier="answer_1">Incrementa su vulnerabilidad ante caídas específicas de ese sector</simpleChoice>
+      <simpleChoice identifier="answer_2">Disminuye el riesgo total</simpleChoice>
+      <simpleChoice identifier="answer_3">Se considera un fondo garantizado</simpleChoice>
+      <simpleChoice identifier="answer_4">Garantiza un mayor rendimiento</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -37,20 +43,30 @@
           <variable identifier="RESPONSE"/>
           <correct identifier="RESPONSE"/>
         </match>
-        <setOutcomeValue identifier="SCORE"><variable identifier="MAXSCORE"/></setOutcomeValue>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">correct_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="SCORE">
+          <variable identifier="MAXSCORE"/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
       </responseIf>
       <responseElse>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">incorrect_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
       </responseElse>
     </responseCondition>
   </responseProcessing>
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Muy bien. La SOFR es una tasa de referencia en EE.UU. usada para valorar créditos y bonos en dólares.</p></div>
+    <div>
+      <p>Muy bien. La concentración en un solo sector incrementa la vulnerabilidad del fondo.</p>
+    </div>
   </modalFeedback>
 
   <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Te recomendamos revisar el tema 5.3 Tasas de referencia internacionales y el uso de la SOFR como indicador.</p></div>
+    <div>
+      <p>Te recomendamos revisar el tema 6.3 Fondos comunes.</p>
+    </div>
   </modalFeedback>
 </assessmentItem>

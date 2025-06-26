@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
@@ -6,27 +6,33 @@
     identifier="QUE__20673700_10" title="Pregunta 10" adaptive="false" timeDependent="false">
 
   <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
-    <correctResponse><value>answer_1</value></correctResponse>
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
   </responseDeclaration>
 
   <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
   <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <itemBody>
     <div>
-      <p>¿Qué ventaja ofrece analizar el CPP de ambas opciones antes de decidir?</p>
+      <p>¿Qué ocurre con el valor de un bono si el plazo de vencimiento es largo y suben las tasas de interés?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1">Comparar el costo total real del crédito más allá de la tasa anunciada</simpleChoice>
-      <simpleChoice identifier="answer_2">Escoger la opción con tasa variable</simpleChoice>
-      <simpleChoice identifier="answer_3">Determinar el riesgo de impago</simpleChoice>
-      <simpleChoice identifier="answer_4">Identificar el plazo más corto</simpleChoice>
+      <simpleChoice identifier="answer_1">El valor del bono cae más que uno con vencimiento corto</simpleChoice>
+      <simpleChoice identifier="answer_2">Aumenta proporcionalmente</simpleChoice>
+      <simpleChoice identifier="answer_3">Se mantiene igual</simpleChoice>
+      <simpleChoice identifier="answer_4">No se afecta porque es a largo plazo</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -37,20 +43,30 @@
           <variable identifier="RESPONSE"/>
           <correct identifier="RESPONSE"/>
         </match>
-        <setOutcomeValue identifier="SCORE"><variable identifier="MAXSCORE"/></setOutcomeValue>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">correct_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="SCORE">
+          <variable identifier="MAXSCORE"/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
       </responseIf>
       <responseElse>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">incorrect_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
       </responseElse>
     </responseCondition>
   </responseProcessing>
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Muy bien. El CPP compara el costo real total del crédito, más allá de la tasa anunciada.</p></div>
+    <div>
+      <p>Muy bien. Los bonos con vencimiento largo son más sensibles a cambios en tasas de interés.</p>
+    </div>
   </modalFeedback>
 
   <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Te recomendamos revisar el tema 5.1 Determinantes de las tasas de interés para evaluar correctamente el CPP.</p></div>
+    <div>
+      <p>Te recomendamos revisar el tema 6.2 Sensibilización sobre los bonos por cambios en las tasas de interés.</p>
+    </div>
   </modalFeedback>
 </assessmentItem>

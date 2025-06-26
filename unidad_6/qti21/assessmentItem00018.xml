@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
@@ -6,27 +6,33 @@
     identifier="QUE__20673700_18" title="Pregunta 18" adaptive="false" timeDependent="false">
 
   <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
-    <correctResponse><value>answer_1</value></correctResponse>
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
   </responseDeclaration>
 
   <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
   <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <itemBody>
     <div>
-      <p>¿Qué beneficio ofrece usar CETES como referencia de tasa libre de riesgo?</p>
+      <p>¿Qué implica que un bono tenga una calificación "BBB-" en una escala crediticia?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1">Permite evaluar si otras inversiones compensan el riesgo asumido</simpleChoice>
-      <simpleChoice identifier="answer_2">Calcular el retorno neto de los bonos</simpleChoice>
-      <simpleChoice identifier="answer_3">Determinar la inflación esperada</simpleChoice>
-      <simpleChoice identifier="answer_4">Definir el plazo óptimo de inversión</simpleChoice>
+      <simpleChoice identifier="answer_1">Es un bono de grado de inversión, pero con riesgo moderado</simpleChoice>
+      <simpleChoice identifier="answer_2">Tiene garantía estatal</simpleChoice>
+      <simpleChoice identifier="answer_3">Es un bono de grado de inversión, pero con riesgo moderado</simpleChoice>
+      <simpleChoice identifier="answer_4">Equivale a bonos basura</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -37,20 +43,30 @@
           <variable identifier="RESPONSE"/>
           <correct identifier="RESPONSE"/>
         </match>
-        <setOutcomeValue identifier="SCORE"><variable identifier="MAXSCORE"/></setOutcomeValue>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">correct_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="SCORE">
+          <variable identifier="MAXSCORE"/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
       </responseIf>
       <responseElse>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">incorrect_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
       </responseElse>
     </responseCondition>
   </responseProcessing>
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Muy bien. Usar CETES como referencia permite comparar si una inversión compensa el riesgo asumido.</p></div>
+    <div>
+      <p>Muy bien. "BBB-" indica un bono de grado de inversión con riesgo moderado.</p>
+    </div>
   </modalFeedback>
 
   <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Te recomendamos revisar el tema 5.4 Las tasas libres de riesgo teórico y su papel como referencia comparativa.</p></div>
+    <div>
+      <p>Te recomendamos revisar el tema 6.1 Tipos de bonos.</p>
+    </div>
   </modalFeedback>
 </assessmentItem>

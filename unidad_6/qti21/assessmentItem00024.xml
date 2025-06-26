@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
@@ -6,27 +6,33 @@
     identifier="QUE__20673700_24" title="Pregunta 24" adaptive="false" timeDependent="false">
 
   <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
-    <correctResponse><value>answer_1</value></correctResponse>
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
   </responseDeclaration>
 
   <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
   <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <itemBody>
     <div>
-      <p>Si Daniela opta por esperar y ahorrar ¿qué instrumento sería el más seguro para proteger su capital?</p>
+      <p>¿Qué beneficio ofrece un bono convertible para el inversionista?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1">CETES por ser instrumentos de bajo riesgo respaldados por el gobierno</simpleChoice>
-      <simpleChoice identifier="answer_2">Criptomonedas</simpleChoice>
-      <simpleChoice identifier="answer_3">Bonos europeos</simpleChoice>
-      <simpleChoice identifier="answer_4">Acciones tecnológicas</simpleChoice>
+      <simpleChoice identifier="answer_1">La posibilidad de convertirse en accionista si suben los precios</simpleChoice>
+      <simpleChoice identifier="answer_2">Recibir dividendos de forma inmediata</simpleChoice>
+      <simpleChoice identifier="answer_3">Vencer automáticamente sin pago de intereses</simpleChoice>
+      <simpleChoice identifier="answer_4">Tener derecho a voto en la empresa</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -37,20 +43,30 @@
           <variable identifier="RESPONSE"/>
           <correct identifier="RESPONSE"/>
         </match>
-        <setOutcomeValue identifier="SCORE"><variable identifier="MAXSCORE"/></setOutcomeValue>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">correct_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="SCORE">
+          <variable identifier="MAXSCORE"/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
       </responseIf>
       <responseElse>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">incorrect_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
       </responseElse>
     </responseCondition>
   </responseProcessing>
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Muy bien. Los CETES protegen el capital en el tiempo por ser seguros y respaldados por el gobierno.</p></div>
+    <div>
+      <p>Muy bien. El bono convertible permite aprovechar alzas en el valor de las acciones.</p>
+    </div>
   </modalFeedback>
 
   <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Te recomendamos revisar el tema 5.4 Las tasas libres de riesgo teórico y sus características conservadoras.</p></div>
+    <div>
+      <p>Te recomendamos revisar el tema 6.4 Papel comercial.</p>
+    </div>
   </modalFeedback>
 </assessmentItem>

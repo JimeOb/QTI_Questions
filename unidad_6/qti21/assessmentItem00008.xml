@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
@@ -6,27 +6,33 @@
     identifier="QUE__20673700_8" title="Pregunta 8" adaptive="false" timeDependent="false">
 
   <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
-    <correctResponse><value>answer_1</value></correctResponse>
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
   </responseDeclaration>
 
   <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
   <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
   </outcomeDeclaration>
 
   <itemBody>
     <div>
-      <p>¿Por qué podría preferir Clara una tasa fija aunque sea más alta inicialmente?</p>
+      <p>¿Cuál de las siguientes afirmaciones sobre bonos convertibles es correcta?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1">Porque le brinda certidumbre financiera sobre sus pagos</simpleChoice>
-      <simpleChoice identifier="answer_2">Porque reduce el CPP automáticamente</simpleChoice>
-      <simpleChoice identifier="answer_3">Porque los pagos son menores al principio</simpleChoice>
-      <simpleChoice identifier="answer_4">Porque es la recomendación de Banxico</simpleChoice>
+      <simpleChoice identifier="answer_1">Pueden cambiarse por acciones del emisor bajo ciertas condiciones</simpleChoice>
+      <simpleChoice identifier="answer_2">Solo se emiten en dólares</simpleChoice>
+      <simpleChoice identifier="answer_3">No pagan intereses</simpleChoice>
+      <simpleChoice identifier="answer_4">Siempre vencen a más de 10 años</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -37,20 +43,30 @@
           <variable identifier="RESPONSE"/>
           <correct identifier="RESPONSE"/>
         </match>
-        <setOutcomeValue identifier="SCORE"><variable identifier="MAXSCORE"/></setOutcomeValue>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">correct_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="SCORE">
+          <variable identifier="MAXSCORE"/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
       </responseIf>
       <responseElse>
-        <setOutcomeValue identifier="FEEDBACKBASIC"><baseValue baseType="identifier">incorrect_fb</baseValue></setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
       </responseElse>
     </responseCondition>
   </responseProcessing>
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Muy bien. Una tasa fija ofrece seguridad y estabilidad en los pagos, aunque sea más alta al inicio.</p></div>
+    <div>
+      <p>Muy bien. Los bonos convertibles permiten convertirse en acciones bajo ciertas condiciones.</p>
+    </div>
   </modalFeedback>
 
   <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Te recomendamos revisar el tema 5.2 Tasas de referencia nacionales y sus beneficios en créditos con tasa fija.</p></div>
+    <div>
+      <p>Te recomendamos revisar el tema 6.1 Tipos de bonos.</p>
+    </div>
   </modalFeedback>
 </assessmentItem>
