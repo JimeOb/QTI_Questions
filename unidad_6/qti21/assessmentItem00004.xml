@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
     http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd"
-    identifier="QUE__20673700_29" title="Pregunta 29" adaptive="false" timeDependent="false">
+    identifier="QUE__20673700_4" title="Pregunta 4" adaptive="false" timeDependent="false">
 
   <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
     <correctResponse><value>answer_1</value></correctResponse>
@@ -20,13 +20,13 @@
 
   <itemBody>
     <div>
-      <p>¿Qué impacto tendría una baja en la TIIE si Daniela eligiera la opción de tasa variable?</p>
+      <p>Si la plataforma ofrece un crédito con TIIE en 9% y un margen de 5.2% ¿cuál sería la tasa total aplicada?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1">Disminuiría la tasa total y el costo del crédito</simpleChoice>
-      <simpleChoice identifier="answer_2">Aumenta por riesgo de mercado</simpleChoice>
-      <simpleChoice identifier="answer_3">Se mantiene igual</simpleChoice>
-      <simpleChoice identifier="answer_4">Se cancela el crédito</simpleChoice>
+      <simpleChoice identifier="answer_1">14.2% porque se suman el índice de referencia y el margen aplicado</simpleChoice>
+      <simpleChoice identifier="answer_2">13% porque es el promedio anual del sector</simpleChoice>
+      <simpleChoice identifier="answer_3">9%, porque es la TIIE actual</simpleChoice>
+      <simpleChoice identifier="answer_4">5.2%, porque es el adicional</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -47,10 +47,10 @@
   </responseProcessing>
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Muy bien. Si la TIIE baja, el costo del crédito variable también disminuye.</p></div>
+    <div><p>Muy bien. La tasa total se calcula sumando la TIIE al margen aplicado por el prestamista.</p></div>
   </modalFeedback>
 
   <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Te recomendamos revisar el tema 5.2 Tasas de referencia nacionales para comprender las fluctuaciones de la TIIE.</p></div>
+    <div><p>Te recomendamos revisar el tema 5.2 Tasas de referencia nacionales, específicamente el cálculo de tasas variables.</p></div>
   </modalFeedback>
 </assessmentItem>

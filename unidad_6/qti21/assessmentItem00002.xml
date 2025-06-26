@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
     http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd"
-    identifier="QUE__20673700_29" title="Pregunta 29" adaptive="false" timeDependent="false">
+    identifier="QUE__20673700_2" title="Pregunta 2" adaptive="false" timeDependent="false">
 
   <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
     <correctResponse><value>answer_1</value></correctResponse>
@@ -20,13 +20,13 @@
 
   <itemBody>
     <div>
-      <p>¿Qué impacto tendría una baja en la TIIE si Daniela eligiera la opción de tasa variable?</p>
+      <p>Si Clara quiere evitar incrementos imprevistos en sus pagos mensuales ¿qué opción de financiamiento debería elegir?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1">Disminuiría la tasa total y el costo del crédito</simpleChoice>
-      <simpleChoice identifier="answer_2">Aumenta por riesgo de mercado</simpleChoice>
-      <simpleChoice identifier="answer_3">Se mantiene igual</simpleChoice>
-      <simpleChoice identifier="answer_4">Se cancela el crédito</simpleChoice>
+      <simpleChoice identifier="answer_1">El crédito con tasa fija porque mantiene cuotas constantes durante todo el plazo</simpleChoice>
+      <simpleChoice identifier="answer_2">El financiamiento con interés anticipado</simpleChoice>
+      <simpleChoice identifier="answer_3">Ninguna, porque ambas tienen riesgo cambiario</simpleChoice>
+      <simpleChoice identifier="answer_4">El crédito con tasa variable, por ofrecer flexibilidad</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -47,10 +47,10 @@
   </responseProcessing>
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Muy bien. Si la TIIE baja, el costo del crédito variable también disminuye.</p></div>
+    <div><p>Muy bien. El crédito con tasa fija garantiza pagos constantes y evita sorpresas en el monto mensual.</p></div>
   </modalFeedback>
 
   <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Te recomendamos revisar el tema 5.2 Tasas de referencia nacionales para comprender las fluctuaciones de la TIIE.</p></div>
+    <div><p>Te recomendamos revisar el tema 5.2 Tasas de referencia nacionales y su impacto en la estabilidad de los pagos.</p></div>
   </modalFeedback>
 </assessmentItem>

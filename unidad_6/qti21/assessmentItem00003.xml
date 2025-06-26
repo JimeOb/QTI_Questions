@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
     http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd"
-    identifier="QUE__20673700_29" title="Pregunta 29" adaptive="false" timeDependent="false">
+    identifier="QUE__20673700_3" title="Pregunta 3" adaptive="false" timeDependent="false">
 
   <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
     <correctResponse><value>answer_1</value></correctResponse>
@@ -20,13 +20,13 @@
 
   <itemBody>
     <div>
-      <p>¿Qué impacto tendría una baja en la TIIE si Daniela eligiera la opción de tasa variable?</p>
+      <p>¿Qué representa un aumento en la TIIE para el crédito ofrecido por la plataforma de crédito colectivo?</p>
     </div>
     <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1">Disminuiría la tasa total y el costo del crédito</simpleChoice>
-      <simpleChoice identifier="answer_2">Aumenta por riesgo de mercado</simpleChoice>
-      <simpleChoice identifier="answer_3">Se mantiene igual</simpleChoice>
-      <simpleChoice identifier="answer_4">Se cancela el crédito</simpleChoice>
+      <simpleChoice identifier="answer_1">Un incremento en el costo total del crédito debido a su naturaleza variable</simpleChoice>
+      <simpleChoice identifier="answer_2">Una disminución del riesgo bancario</simpleChoice>
+      <simpleChoice identifier="answer_3">Una reducción automática del plazo</simpleChoice>
+      <simpleChoice identifier="answer_4">Un beneficio fiscal</simpleChoice>
     </choiceInteraction>
   </itemBody>
 
@@ -47,10 +47,10 @@
   </responseProcessing>
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Muy bien. Si la TIIE baja, el costo del crédito variable también disminuye.</p></div>
+    <div><p>Muy bien. Un aumento en la TIIE incrementa el costo del crédito variable, ya que es su base.</p></div>
   </modalFeedback>
 
   <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
-    <div><p>Te recomendamos revisar el tema 5.2 Tasas de referencia nacionales para comprender las fluctuaciones de la TIIE.</p></div>
+    <div><p>Te recomendamos revisar el tema 5.2 Tasas de referencia nacionales para entender el efecto de la TIIE en créditos variables.</p></div>
   </modalFeedback>
 </assessmentItem>
