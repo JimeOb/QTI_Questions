@@ -1,0 +1,42 @@
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
+    identifier="Pregunta1" title="Pregunta 1" adaptive="false" timeDependent="false">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier">
+    <correctResponse>
+      <value>choice_1</value>
+    </correctResponse>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="FEEDBACK" cardinality="single" baseType="identifier"/>
+  <itemBody>
+    <choiceInteraction responseIdentifier="RESPONSE" shuffle="false" maxChoices="1">
+      <prompt>Un pequeño negocio en Monterrey solicita un préstamo de $100,000 para pagar en 2 años con interés simple del 10% anual. ¿Cuál de las siguientes afirmaciones representa correctamente el monto total que debe pagar?</prompt>
+      <simpleChoice identifier="choice_1">$120,000, porque se aplica la fórmula del interés simple: M = P × (1 + i × n)</simpleChoice>
+      <simpleChoice identifier="choice_2">$200,000, porque se duplica el valor con el tiempo</simpleChoice>
+      <simpleChoice identifier="choice_3">$110,000, porque se paga solo el capital y la mitad del interés</simpleChoice>
+      <simpleChoice identifier="choice_4">$100,000, porque el interés simple no se aplica en préstamos comerciales</simpleChoice>
+    </choiceInteraction>
+  </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE"/>
+          <baseValue baseType="identifier">choice_1</baseValue>
+        </match>
+        <setOutcomeValue identifier="FEEDBACK">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
+      </responseIf>
+      <responseElse>
+        <setOutcomeValue identifier="FEEDBACK">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
+      </responseElse>
+    </responseCondition>
+  </responseProcessing>
+  <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACK" showHide="show">
+    ¡Muy bien! El interés simple permite calcular con claridad el monto total sin reinversión de intereses. Te recomendamos revisar el tema 2.1 Interés simple para validar este concepto.
+  </modalFeedback>
+  <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACK" showHide="show">
+    Revisa el tema 2.1 Interés simple para validar este concepto.
+  </modalFeedback>
+</assessmentItem>

@@ -1,0 +1,41 @@
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="Pregunta23" title="Pregunta 23" adaptive="false" timeDependent="false">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier">
+    <correctResponse>
+      <value>ChoiceA</value>
+    </correctResponse>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="FEEDBACK" cardinality="single" baseType="identifier"/>
+  <itemBody>
+    <p>En México, una inversión ofrece una tasa nominal del 12% anual, pero la inflación proyectada es del 7%. ¿Cuál es el rendimiento real aproximado?</p>
+    <choiceInteraction responseIdentifier="RESPONSE" shuffle="true" maxChoices="1">
+      <simpleChoice identifier="ChoiceA">5%, porque el interés real se estima restando la inflación a la tasa nominal</simpleChoice>
+      <simpleChoice identifier="ChoiceB">12%, porque es la tasa nominal anunciada</simpleChoice>
+      <simpleChoice identifier="ChoiceC">7%, porque la inflación anula todo el interés</simpleChoice>
+      <simpleChoice identifier="ChoiceD">15%, porque se suman la tasa y la inflación</simpleChoice>
+    </choiceInteraction>
+  </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE"/>
+          <correct/>
+        </match>
+        <setOutcomeValue identifier="FEEDBACK">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
+      </responseIf>
+      <responseElse>
+        <setOutcomeValue identifier="FEEDBACK">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
+      </responseElse>
+    </responseCondition>
+  </responseProcessing>
+  <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACK" showHide="show">
+    ¡Muy bien! El interés real nos ayuda a entender el poder adquisitivo real tras descontar la inflación. Te recomendamos revisar el tema 2.3 Interés nominal e interés real para validar este concepto.
+  </modalFeedback>
+  <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACK" showHide="show">
+    Revisa el tema 2.3 Interés nominal e interés real para validar este concepto.
+  </modalFeedback>
+</assessmentItem>

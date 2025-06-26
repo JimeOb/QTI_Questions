@@ -1,0 +1,41 @@
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="Pregunta9" title="Pregunta 9" adaptive="false" timeDependent="false">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier">
+    <correctResponse>
+      <value>ChoiceA</value>
+    </correctResponse>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="FEEDBACK" cardinality="single" baseType="identifier"/>
+  <itemBody>
+    <p>Una empresa ofrece pagar $8,000 dentro de dos años por un trabajo realizado hoy. La tasa de descuento vigente es del 10% anual. ¿Cuál sería un valor razonable para aceptar ese pago hoy?</p>
+    <choiceInteraction responseIdentifier="RESPONSE" shuffle="true" maxChoices="1">
+      <simpleChoice identifier="ChoiceA">$6,611.57, porque es el equivalente justo hoy considerando el valor del dinero en el tiempo</simpleChoice>
+      <simpleChoice identifier="ChoiceB">$7,200, porque representa una reducción prudente del valor futuro</simpleChoice>
+      <simpleChoice identifier="ChoiceC">$8,000, porque aún no se ha recibido el dinero</simpleChoice>
+      <simpleChoice identifier="ChoiceD">$9,000, porque se espera que el valor aumente con el tiempo</simpleChoice>
+    </choiceInteraction>
+  </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE"/>
+          <correct/>
+        </match>
+        <setOutcomeValue identifier="FEEDBACK">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
+      </responseIf>
+      <responseElse>
+        <setOutcomeValue identifier="FEEDBACK">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
+      </responseElse>
+    </responseCondition>
+  </responseProcessing>
+  <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACK" showHide="show">
+    ¡Muy bien! La tasa de descuento permite determinar el valor actual de pagos futuros. Te recomendamos revisar el tema 2.4 Tasa de descuento para validar este concepto.
+  </modalFeedback>
+  <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACK" showHide="show">
+    Revisa el tema 2.4 Tasa de descuento para validar este concepto.
+  </modalFeedback>
+</assessmentItem>

@@ -1,0 +1,41 @@
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="Pregunta15" title="Pregunta 15" adaptive="false" timeDependent="false">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier">
+    <correctResponse>
+      <value>ChoiceA</value>
+    </correctResponse>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="FEEDBACK" cardinality="single" baseType="identifier"/>
+  <itemBody>
+    <p>Migue y Erik invierten $10,000 en una cooperativa y al cabo de un año reciben $12,000. Con base en esta información, ¿cuál sería la mejor estimación de la tasa de rendimiento anual?</p>
+    <choiceInteraction responseIdentifier="RESPONSE" shuffle="true" maxChoices="1">
+      <simpleChoice identifier="ChoiceA">20%, porque representa la ganancia neta respecto a lo invertido inicialmente</simpleChoice>
+      <simpleChoice identifier="ChoiceB">2%, porque refleja una ganancia moderada sobre el capital</simpleChoice>
+      <simpleChoice identifier="ChoiceC">10%, porque es una tasa común en inversiones seguras</simpleChoice>
+      <simpleChoice identifier="ChoiceD">50%, porque se considera el aumento sobre el total recibido</simpleChoice>
+    </choiceInteraction>
+  </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE"/>
+          <correct/>
+        </match>
+        <setOutcomeValue identifier="FEEDBACK">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
+      </responseIf>
+      <responseElse>
+        <setOutcomeValue identifier="FEEDBACK">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
+      </responseElse>
+    </responseCondition>
+  </responseProcessing>
+  <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACK" showHide="show">
+    ¡Muy bien! La tasa de rendimiento te muestra el beneficio proporcional de la inversión. Te recomendamos revisar el tema 2.5 Tasa de rendimiento para validar este concepto.
+  </modalFeedback>
+  <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACK" showHide="show">
+    Revisa el tema 2.5 Tasa de rendimiento para validar este concepto.
+  </modalFeedback>
+</assessmentItem>

@@ -1,0 +1,41 @@
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="Pregunta12" title="Pregunta 12" adaptive="false" timeDependent="false">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier">
+    <correctResponse>
+      <value>ChoiceA</value>
+    </correctResponse>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="FEEDBACK" cardinality="single" baseType="identifier"/>
+  <itemBody>
+    <p>Una familia invierte $150,000 en una cuenta con capitalización anual del 10% durante 3 años. ¿Cuál de los siguientes resultados refleja correctamente el monto acumulado bajo interés compuesto?</p>
+    <choiceInteraction responseIdentifier="RESPONSE" shuffle="true" maxChoices="1">
+      <simpleChoice identifier="ChoiceA">$199,650, porque se aplica la fórmula del interés compuesto: M = P × (1 + i)ⁿ</simpleChoice>
+      <simpleChoice identifier="ChoiceB">$195,000, porque se acumulan $15,000 por año</simpleChoice>
+      <simpleChoice identifier="ChoiceC">$180,000, porque solo se aplica una vez el 10%</simpleChoice>
+      <simpleChoice identifier="ChoiceD">$165,000, porque se considera el capital más un único interés</simpleChoice>
+    </choiceInteraction>
+  </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE"/>
+          <correct/>
+        </match>
+        <setOutcomeValue identifier="FEEDBACK">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
+      </responseIf>
+      <responseElse>
+        <setOutcomeValue identifier="FEEDBACK">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
+      </responseElse>
+    </responseCondition>
+  </responseProcessing>
+  <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACK" showHide="show">
+    ¡Muy bien! El interés compuesto con reinversión genera un crecimiento exponencial. Te recomendamos revisar el tema 2.2 Interés compuesto para validar este concepto.
+  </modalFeedback>
+  <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACK" showHide="show">
+    Revisa el tema 2.2 Interés compuesto para validar este concepto.
+  </modalFeedback>
+</assessmentItem>

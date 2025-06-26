@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 
+    http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd" 
+    identifier="QUE__20673700_20" title="Pregunta 20" adaptive="false" timeDependent="false">
+
+  <responseDeclaration identifier="RESPONSE" cardinality="multiple" baseType="identifier">
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
+  </responseDeclaration>
+
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
+  </outcomeDeclaration>
+
+  <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
+  </outcomeDeclaration>
+
+  <itemBody>
+    <div>
+      <p>¿Cuál es el interés generado por una inversión de $28,000 a una tasa del 6% anual simple durante 2.5 años?</p>
+    </div>
+    <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
+      <simpleChoice identifier="answer_1">Tomar el promedio sin considerar variabilidad</simpleChoice>
+      <simpleChoice identifier="answer_2">Usar el valor más bajo</simpleChoice>
+      <simpleChoice identifier="answer_3">Analizar el promedio y la desviación estándar</simpleChoice>
+      <simpleChoice identifier="answer_4">Descartar el mejor año</simpleChoice>
+    </choiceInteraction>
+  </itemBody>
+
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE"/>
+          <correct identifier="RESPONSE"/>
+        </match>
+        <setOutcomeValue identifier="SCORE">
+          <variable identifier="MAXSCORE"/>
+        </setOutcomeValue>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
+      </responseIf>
+      <responseElse>
+        <setOutcomeValue identifier="FEEDBACKBASIC">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
+      </responseElse>
+    </responseCondition>
+  </responseProcessing>
+
+  <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
+    <div>
+      <p>¡Muy bien! Es importante considerar la dispersión de los datos, no solo el promedio.</p>
+    </div>
+  </modalFeedback>
+
+  <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
+    <div>
+      <p>Revisa el tema 1.4 Estimación de cifras financieras con base en datos históricos para validar este concepto.</p>
+    </div>
+  </modalFeedback>
+
+</assessmentItem>
