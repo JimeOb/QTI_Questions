@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
+    xmlns:ns9="http://www.imsglobal.org/xsd/apip/apipv1p0/imsapip_qtiv1p0"
+    xmlns:ns8="http://www.w3.org/1999/xlink" title="Pregunta 9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd"
+    adaptive="false" timeDependent="false" identifier="QUE__20673700_11">
+
+  <responseDeclaration cardinality="multiple" baseType="identifier" identifier="RESPONSE">
+    <correctResponse>
+      <value>answer_1</value>
+    </correctResponse>
+  </responseDeclaration>
+
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
+    <defaultValue><value>0</value></defaultValue>
+  </outcomeDeclaration>
+  <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue><value>0</value></defaultValue>
+  </outcomeDeclaration>
+
+  <itemBody>
+    <div>
+      <p>Si Jiwoo representa en un diagrama de tiempo pagos de $3,000 durante 4 trimestres, ¿qué información obtiene?</p>
+    </div>
+    <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
+      <simpleChoice identifier="answer_1" fixed="true">
+        <p>Un préstamo que se paga con cuotas fijas durante 5 años</p>
+      </simpleChoice>
+      <simpleChoice identifier="answer_2" fixed="true">
+        <p>Una renta vitalicia sin fecha de finalización</p>
+      </simpleChoice>
+      <simpleChoice identifier="answer_3" fixed="true">
+        <p>Una beca que depende del promedio académico</p>
+      </simpleChoice>
+      <simpleChoice identifier="answer_4" fixed="true">
+        <p>Un fondo que se entrega mientras la persona esté viva</p>
+      </simpleChoice>
+    </choiceInteraction>
+  </itemBody>
+
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="RESPONSE"/>
+          <correct iden
