@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
     xmlns:ns9="http://www.imsglobal.org/xsd/apip/apipv1p0/imsapip_qtiv1p0"
-    xmlns:ns8="http://www.w3.org/1999/xlink" title="Pregunta 9"
+    xmlns:ns8="http://www.w3.org/1999/xlink" title="Pregunta 12"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd"
     adaptive="false" timeDependent="false" identifier="QUE__20673700_11">
