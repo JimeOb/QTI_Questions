@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Muy bien. El bono convertible permite aprovechar alzas en el valor de las acciones.</p>
+      <p>¡Muy bien! El bono convertible permite aprovechar alzas en el valor de las acciones.</p>
     </div>
   </modalFeedback>
 

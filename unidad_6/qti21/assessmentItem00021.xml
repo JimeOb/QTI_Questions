@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. El respaldo estatal hace más seguros a los bonos gubernamentales.</p>
+      <p>¡Muy bien! El respaldo estatal hace más seguros a los bonos gubernamentales.</p>
     </div>
   </modalFeedback>
 

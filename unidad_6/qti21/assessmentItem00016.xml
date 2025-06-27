@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Muy bien. La concentración en un solo sector incrementa la vulnerabilidad del fondo.</p>
+      <p>¡Muy bien! La concentración en un solo sector incrementa la vulnerabilidad del fondo.</p>
     </div>
   </modalFeedback>
 

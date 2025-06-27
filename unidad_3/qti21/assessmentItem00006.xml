@@ -64,13 +64,13 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
     <div>
-      <p>Correcto. El valor futuro acumula los intereses sobre los pagos periódicos.</p>
+      <p>¡Muy bien! El valor futuro acumula los intereses sobre los pagos periódicos.</p>
     </div>
   </modalFeedback>
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
     <div>
-      <p>Incorrecto. Te recomendamos revisar el tema 3.2 Valor presente/futuro de una anualidad para validar el uso de la fórmula del valor futuro.</p>
+      <p>Te recomendamos revisar el tema 3.2 Valor presente/futuro de una anualidad para validar el uso de la fórmula del valor futuro.</p>
     </div>
   </modalFeedback>
 

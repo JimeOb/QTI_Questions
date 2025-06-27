@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Muy bien. Emitir sin respaldo ni calificación aumenta significativamente el riesgo.</p>
+      <p>¡Muy bien! Emitir sin respaldo ni calificación aumenta significativamente el riesgo.</p>
     </div>
   </modalFeedback>
 

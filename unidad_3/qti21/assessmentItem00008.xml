@@ -64,13 +64,13 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
     <div>
-      <p>Correcto. En una anualidad decreciente geométrica, el pago disminuye en un porcentaje constante.</p>
+      <p>¡Muy bien! En una anualidad decreciente geométrica, el pago disminuye en un porcentaje constante.</p>
     </div>
   </modalFeedback>
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
     <div>
-      <p>Incorrecto. Te recomendamos revisar el tema 3.4 Anualidades con pagos variables para identificar correctamente el patrón de cambio en los pagos.</p>
+      <p>Te recomendamos revisar el tema 3.4 Anualidades con pagos variables para identificar correctamente el patrón de cambio en los pagos.</p>
     </div>
   </modalFeedback>
 

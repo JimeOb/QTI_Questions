@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Muy bien. Los fondos comunes permiten diversificar al agrupar capital de varios inversionistas</p>
+      <p>¡Muy bien! Los fondos comunes permiten diversificar al agrupar capital de varios inversionistas</p>
     </div>
   </modalFeedback>
 

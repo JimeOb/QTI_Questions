@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Muy bien. Una recesión global puede afectar negativamente los fondos con exposición internacional.</p>
+      <p>¡Muy bien! Una recesión global puede afectar negativamente los fondos con exposición internacional.</p>
     </div>
   </modalFeedback>
 

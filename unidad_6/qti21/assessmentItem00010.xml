@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Muy bien. Los bonos con vencimiento largo son más sensibles a cambios en tasas de interés.</p>
+      <p>¡Muy bien! Los bonos con vencimiento largo son más sensibles a cambios en tasas de interés.</p>
     </div>
   </modalFeedback>
 

@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Muy bien. La duración permite anticipar sensibilidad a los cambios de tasas.</p>
+      <p>¡Muy bien! La duración permite anticipar sensibilidad a los cambios de tasas.</p>
     </div>
   </modalFeedback>
 

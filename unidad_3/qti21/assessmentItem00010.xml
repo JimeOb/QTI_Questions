@@ -64,13 +64,13 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
     <div>
-      <p>Correcto. Es una anualidad irregular, pues los pagos varían sin patrón.</p>
+      <p>¡Muy bien! Es una anualidad irregular, pues los pagos varían sin patrón.</p>
     </div>
   </modalFeedback>
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
     <div>
-      <p>Incorrecto. Te recomendamos revisar el tema 3.4 Anualidades con pagos variables para reforzar los criterios de clasificación de anualidades.</p>
+      <p>Te recomendamos revisar el tema 3.4 Anualidades con pagos variables para reforzar los criterios de clasificación de anualidades.</p>
     </div>
   </modalFeedback>
 

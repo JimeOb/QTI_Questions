@@ -1,48 +1,41 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1"
-    xmlns:ns9="http://www.imsglobal.org/xsd/apip/apipv1p0/imsapip_qtiv1p0"
-    xmlns:ns8="http://www.w3.org/1999/xlink" title="Pregunta 12"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd"
-    adaptive="false" timeDependent="false" identifier="QUE__20673700_11">
-
-  <responseDeclaration cardinality="multiple" baseType="identifier" identifier="RESPONSE">
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" identifier="Pregunta31" title="Pregunta 31" adaptive="false" timeDependent="false">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="identifier">
     <correctResponse>
-      <value>answer_1</value>
+      <value>ChoiceA</value>
     </correctResponse>
   </responseDeclaration>
-
-  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
-  </outcomeDeclaration>
-  <outcomeDeclaration identifier="FEEDBACKBASIC" cardinality="single" baseType="identifier"/>
-  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
-    <defaultValue><value>0</value></defaultValue>
-  </outcomeDeclaration>
-
+  <outcomeDeclaration identifier="FEEDBACK" cardinality="single" baseType="identifier"/>
   <itemBody>
-    <div>
-      <p>Si Jiwoo representa en un diagrama de tiempo pagos de $3,000 durante 4 trimestres, ¿qué información obtiene?</p>
-    </div>
-    <choiceInteraction responseIdentifier="RESPONSE" maxChoices="0" shuffle="false">
-      <simpleChoice identifier="answer_1" fixed="true">
-        <p>Un préstamo que se paga con cuotas fijas durante 5 años</p>
-      </simpleChoice>
-      <simpleChoice identifier="answer_2" fixed="true">
-        <p>Una renta vitalicia sin fecha de finalización</p>
-      </simpleChoice>
-      <simpleChoice identifier="answer_3" fixed="true">
-        <p>Una beca que depende del promedio académico</p>
-      </simpleChoice>
-      <simpleChoice identifier="answer_4" fixed="true">
-        <p>Un fondo que se entrega mientras la persona esté viva</p>
-      </simpleChoice>
+    <p>Si Jiwoo representa en un diagrama de tiempo pagos de $3,000 durante 4 trimestres, ¿qué información obtiene?</p>
+    <choiceInteraction responseIdentifier="RESPONSE" shuffle="true" maxChoices="1">
+      <simpleChoice identifier="ChoiceA">Un préstamo que se paga con cuotas fijas durante 5 años</simpleChoice>
+      <simpleChoice identifier="ChoiceB">Una renta vitalicia sin fecha de finalización</simpleChoice>
+      <simpleChoice identifier="ChoiceC">Una beca que depende del promedio académico</simpleChoice>
+      <simpleChoice identifier="ChoiceD">Un fondo que se entrega mientras la persona esté viva</simpleChoice>
     </choiceInteraction>
   </itemBody>
-
   <responseProcessing>
     <responseCondition>
       <responseIf>
         <match>
           <variable identifier="RESPONSE"/>
-          <correct iden
+          <correct/>
+        </match>
+        <setOutcomeValue identifier="FEEDBACK">
+          <baseValue baseType="identifier">correct_fb</baseValue>
+        </setOutcomeValue>
+      </responseIf>
+      <responseElse>
+        <setOutcomeValue identifier="FEEDBACK">
+          <baseValue baseType="identifier">incorrect_fb</baseValue>
+        </setOutcomeValue>
+      </responseElse>
+    </responseCondition>
+  </responseProcessing>
+  <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACK" showHide="show">
+    ¡Muy bien! Las anualidades ciertas tienen una duración definida, como en préstamos con plazo. Te recomendamos revisar el tema 3.1 Tipos de anualidades para distinguir entre anualidades ciertas y contingentes.
+  </modalFeedback>
+  <modalFeedback identifier="incorrect_fb" outcomeIdentifier="FEEDBACK" showHide="show">
+    Revisa el tema 3.1 Tipos de anualidades para distinguir entre anualidades ciertas y contingentes.
+  </modalFeedback>
+</assessmentItem>

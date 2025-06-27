@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Muy bien. El valor de los bonos existentes cae cuando suben las tasas porque los nuevos bonos son más atractivos</p>
+      <p>¡Muy bien! El valor de los bonos existentes cae cuando suben las tasas porque los nuevos bonos son más atractivos</p>
     </div>
   </modalFeedback>
 

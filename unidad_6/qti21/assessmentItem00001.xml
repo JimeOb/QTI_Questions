@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. La prima de riesgo es la diferencia entre la tasa ofrecida y la tasa libre de riesgo teórica</p>
+      <p>¡Muy bien! La prima de riesgo es la diferencia entre la tasa ofrecida y la tasa libre de riesgo teórica</p>
     </div>
   </modalFeedback>
   

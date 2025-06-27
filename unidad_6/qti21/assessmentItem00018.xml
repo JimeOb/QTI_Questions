@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Muy bien. "BBB-" indica un bono de grado de inversión con riesgo moderado.</p>
+      <p>¡Muy bien! "BBB-" indica un bono de grado de inversión con riesgo moderado.</p>
     </div>
   </modalFeedback>
 

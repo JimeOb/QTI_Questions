@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. Tasa flotante significa que varía según una tasa de referencia.</p>
+      <p>¡Muy bien! Tasa flotante significa que varía según una tasa de referencia.</p>
     </div>
   </modalFeedback>
 

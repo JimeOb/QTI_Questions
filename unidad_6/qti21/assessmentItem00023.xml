@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. “AA+” refleja alto grado de solvencia y bajo riesgo de incumplimiento.</p>
+      <p>¡Muy bien! “AA+” refleja alto grado de solvencia y bajo riesgo de incumplimiento.</p>
     </div>
   </modalFeedback>
 

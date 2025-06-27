@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. Los bonos de largo plazo no forman parte de fondos del mercado monetario.</p>
+      <p>¡Muy bien! Los bonos de largo plazo no forman parte de fondos del mercado monetario.</p>
     </div>
   </modalFeedback>
 

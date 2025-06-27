@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Muy bien. Cotizarse por debajo del valor nominal implica un rendimiento mayor al de su tasa nominal.</p>
+      <p>¡Muy bien! Cotizarse por debajo del valor nominal implica un rendimiento mayor al de su tasa nominal.</p>
     </div>
   </modalFeedback>
 

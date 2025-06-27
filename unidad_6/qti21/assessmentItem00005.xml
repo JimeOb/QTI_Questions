@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. La duración mide la sensibilidad del precio del bono ante cambios en la tasa de interés</p>
+      <p>¡Muy bien! La duración mide la sensibilidad del precio del bono ante cambios en la tasa de interés</p>
     </div>
   </modalFeedback>
 

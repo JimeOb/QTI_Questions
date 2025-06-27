@@ -70,7 +70,7 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
     <div>
-      <p>Incorrecto. Te recomendamos revisar el tema 3.3 Diagramas de tiempo para comprender su uso en la ubicación temporal de flujos.</p>
+      <p>Te recomendamos revisar el tema 3.3 Diagramas de tiempo para comprender su uso en la ubicación temporal de flujos.</p>
     </div>
   </modalFeedback>
 

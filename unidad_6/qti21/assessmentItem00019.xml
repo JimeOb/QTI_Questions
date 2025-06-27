@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. Reducir la duración protege ante incrementos en tasas de interés.</p>
+      <p>¡Muy bien! Reducir la duración protege ante incrementos en tasas de interés.</p>
     </div>
   </modalFeedback>
 

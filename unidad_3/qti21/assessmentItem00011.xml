@@ -64,13 +64,13 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
     <div>
-      <p>Correcto. El valor futuro muestra cuánto dinero se tendrá al final, sumando cada pago más los intereses generados.</p>
+      <p>¡Muy bien! El valor futuro muestra cuánto dinero se tendrá al final, sumando cada pago más los intereses generados.</p>
     </div>
   </modalFeedback>
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
     <div>
-      <p>Incorrecto. Te recomendamos revisar el tema 3.2 Valor presente/futuro de una anualidad para entender la acumulación de intereses en anualidades frecuentes.</p>
+      <p>Te recomendamos revisar el tema 3.2 Valor presente/futuro de una anualidad para entender la acumulación de intereses en anualidades frecuentes.</p>
     </div>
   </modalFeedback>
 

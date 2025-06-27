@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. La falta de calificación implica alto riesgo de incumplimiento.</p>
+      <p>¡Muy bien! La falta de calificación implica alto riesgo de incumplimiento.</p>
     </div>
   </modalFeedback>
 

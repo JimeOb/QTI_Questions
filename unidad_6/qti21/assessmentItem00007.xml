@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. La concentración en un solo tipo de activo puede aumentar el riesgo del fondo.</p>
+      <p>¡Muy bien! La concentración en un solo tipo de activo puede aumentar el riesgo del fondo.</p>
     </div>
   </modalFeedback>
 

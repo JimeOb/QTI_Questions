@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. Representa el rendimiento mínimo esperado sin asumir riesgo adicional.</p>
+      <p>¡Muy bien! Representa el rendimiento mínimo esperado sin asumir riesgo adicional.</p>
     </div>
   </modalFeedback>
 

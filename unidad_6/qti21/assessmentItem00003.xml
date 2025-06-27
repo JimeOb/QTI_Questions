@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. El papel comercial no cuenta con respaldo estatal, lo que incrementa su riesgo</p>
+      <p>¡Muy bien! El papel comercial no cuenta con respaldo estatal, lo que incrementa su riesgo</p>
     </div>
   </modalFeedback>
 

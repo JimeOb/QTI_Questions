@@ -64,13 +64,13 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
     <div>
-      <p>Correcto. La fórmula cambia y afecta directamente el resultado.</p>
+      <p>¡Muy bien! La fórmula cambia y afecta directamente el resultado.</p>
     </div>
   </modalFeedback>
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
     <div>
-      <p>Incorrecto. Te recomendamos revisar el tema 3.1 Tipos de anualidades para aplicar la fórmula adecuada y evitar errores en el resultado.</p>
+      <p>Te recomendamos revisar el tema 3.1 Tipos de anualidades para aplicar la fórmula adecuada y evitar errores en el resultado.</p>
     </div>
   </modalFeedback>
 

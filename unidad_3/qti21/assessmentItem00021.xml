@@ -64,13 +64,13 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
     <div>
-      <p>Correcto. En las anualidades anticipadas, se ajusta el valor presente con el factor (1 + i).</p>
+      <p>¡Muy bien! En las anualidades anticipadas, se ajusta el valor presente con el factor (1 + i).</p>
     </div>
   </modalFeedback>
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
     <div>
-      <p>Incorrecto. Te recomendamos revisar el tema 3.2 Valor presente/futuro de una anualidad para ajustar el cálculo del valor presente según el tipo de anualidad.</p>
+      <p>Te recomendamos revisar el tema 3.2 Valor presente/futuro de una anualidad para ajustar el cálculo del valor presente según el tipo de anualidad.</p>
     </div>
   </modalFeedback>
 

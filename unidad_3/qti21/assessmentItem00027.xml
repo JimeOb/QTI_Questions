@@ -64,13 +64,13 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
     <div>
-      <p>Correcto. El incremento porcentual y constante es clave en este tipo de anualidades.</p>
+      <p>¡Muy bien! El incremento porcentual y constante es clave en este tipo de anualidades.</p>
     </div>
   </modalFeedback>
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
     <div>
-      <p>Incorrecto. Te recomendamos revisar el tema 3.4 Anualidades con pagos variables para identificar patrones geométricos en los incrementos.</p>
+      <p>Te recomendamos revisar el tema 3.4 Anualidades con pagos variables para identificar patrones geométricos en los incrementos.</p>
     </div>
   </modalFeedback>
 

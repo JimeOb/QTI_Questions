@@ -64,7 +64,7 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
     <div>
-      <p>Correcto. El diagrama de tiempo muestra gráficamente cuándo ocurren los flujos de efectivo</p>
+      <p>¡Muy bien! El diagrama de tiempo muestra gráficamente cuándo ocurren los flujos de efectivo</p>
     </div>
   </modalFeedback>
 

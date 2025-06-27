@@ -64,13 +64,13 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
     <div>
-      <p>Correcto. Al comparar valores presentes, la opción A es más económica.</p>
+      <p>¡Muy bien! Al comparar valores presentes, la opción A es más económica.</p>
     </div>
   </modalFeedback>
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
     <div>
-      <p>Incorrecto. Te recomendamos revisar el tema 3.2 Valor presente/futuro de una anualidad para afianzar la comparación de alternativas financieras.</p>
+      <p>Te recomendamos revisar el tema 3.2 Valor presente/futuro de una anualidad para afianzar la comparación de alternativas financieras.</p>
     </div>
   </modalFeedback>
 

@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Muy bien. El papel comercial se caracteriza por tener vencimientos a corto plazo sin respaldo de activos.</p>
+      <p>¡Muy bien! El papel comercial se caracteriza por tener vencimientos a corto plazo sin respaldo de activos.</p>
     </div>
   </modalFeedback>
 

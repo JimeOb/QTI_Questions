@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. El spread de riesgo mide la diferencia frente a la tasa libre de riesgo.</p>
+      <p>¡Muy bien! El spread de riesgo mide la diferencia frente a la tasa libre de riesgo.</p>
     </div>
   </modalFeedback>
 

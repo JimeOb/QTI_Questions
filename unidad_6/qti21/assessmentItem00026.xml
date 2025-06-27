@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Muy bien. Un fondo abierto permite ingresar o salir en cualquier momento.</p>
+      <p>¡Muy bien! Un fondo abierto permite ingresar o salir en cualquier momento.</p>
     </div>
   </modalFeedback>
 

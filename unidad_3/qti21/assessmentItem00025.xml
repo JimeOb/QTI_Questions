@@ -64,13 +64,13 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
     <div>
-      <p>Correcto. Se busca conocer cuánto se acumula al final, por eso se usa el valor futuro.</p>
+      <p>¡Muy bien! Se busca conocer cuánto se acumula al final, por eso se usa el valor futuro.</p>
     </div>
   </modalFeedback>
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
     <div>
-      <p>Incorrecto. Te recomendamos revisar el tema 3.2 Valor presente/futuro de una anualidad para planear ahorros a futuro.</p>
+      <p>Te recomendamos revisar el tema 3.2 Valor presente/futuro de una anualidad para planear ahorros a futuro.</p>
     </div>
   </modalFeedback>
 

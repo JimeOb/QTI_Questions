@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. La diversificación disminuye la exposición al riesgo de un solo activo o sector.</p>
+      <p>¡Muy bien! La diversificación disminuye la exposición al riesgo de un solo activo o sector.</p>
     </div>
   </modalFeedback>
 

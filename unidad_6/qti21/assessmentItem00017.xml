@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. La falta de historial financiero impide evaluar adecuadamente la capacidad de pago del emisor.</p>
+      <p>¡Muy bien! La falta de historial financiero impide evaluar adecuadamente la capacidad de pago del emisor.</p>
     </div>
   </modalFeedback>
 

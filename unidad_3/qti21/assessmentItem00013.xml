@@ -64,13 +64,13 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
     <div>
-      <p>Correcto. Al dividir el año en cuatro partes, se establece una frecuencia trimestral.</p>
+      <p>¡Muy bien! Al dividir el año en cuatro partes, se establece una frecuencia trimestral.</p>
     </div>
   </modalFeedback>
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
     <div>
-      <p>Incorrecto. Te recomendamos revisar el tema 3.1 Tipos de anualidades para identificar la frecuencia de pago correctamente.</p>
+      <p>Te recomendamos revisar el tema 3.1 Tipos de anualidades para identificar la frecuencia de pago correctamente.</p>
     </div>
   </modalFeedback>
 

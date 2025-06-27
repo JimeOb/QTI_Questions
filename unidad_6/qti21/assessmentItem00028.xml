@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Muy bien. Omitir la composición afecta la transparencia y decisiones del inversionista.</p>
+      <p>¡Muy bien! Omitir la composición afecta la transparencia y decisiones del inversionista.</p>
     </div>
   </modalFeedback>
 

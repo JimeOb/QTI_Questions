@@ -64,13 +64,13 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
     <div>
-      <p>Correcto. La fórmula de anualidad anticipada incluye un ajuste que aumenta el resultado.</p>
+      <p>¡Muy bien! La fórmula de anualidad anticipada incluye un ajuste que aumenta el resultado.</p>
     </div>
   </modalFeedback>
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
     <div>
-      <p>Incorrecto. Te recomendamos revisar el tema 3.1 Tipos de anualidades para aplicar la fórmula correcta y evitar errores en los cálculos.</p>
+      <p>Te recomendamos revisar el tema 3.1 Tipos de anualidades para aplicar la fórmula correcta y evitar errores en los cálculos.</p>
     </div>
   </modalFeedback>
 

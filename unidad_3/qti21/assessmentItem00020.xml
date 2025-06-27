@@ -64,13 +64,13 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
     <div>
-      <p>Correcto. El valor presente permite comparar pagos que ocurren en momentos distintos.</p>
+      <p>¡Muy bien! El valor presente permite comparar pagos que ocurren en momentos distintos.</p>
     </div>
   </modalFeedback>
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
     <div>
-      <p>Incorrecto. Te recomendamos revisar el tema 3.2 Valor presente/futuro de una anualidad para comparar alternativas según el momento de pago.</p>
+      <p>Te recomendamos revisar el tema 3.2 Valor presente/futuro de una anualidad para comparar alternativas según el momento de pago.</p>
     </div>
   </modalFeedback>
 

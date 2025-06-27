@@ -64,13 +64,13 @@
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="correct_fb">
     <div>
-      <p>Correcto. Cuando los flujos son distintos, se calcula el valor presente individualmente.</p>
+      <p>¡Muy bien! Cuando los flujos son distintos, se calcula el valor presente individualmente.</p>
     </div>
   </modalFeedback>
 
   <modalFeedback showHide="show" outcomeIdentifier="FEEDBACKBASIC" identifier="incorrect_fb">
     <div>
-      <p>Incorrecto. Te recomendamos revisar el tema 3.2 Valor presente/futuro de una anualidad para calcular el valor presente de flujos irregulares.</p>
+      <p>Te recomendamos revisar el tema 3.2 Valor presente/futuro de una anualidad para calcular el valor presente de flujos irregulares.</p>
     </div>
   </modalFeedback>
 

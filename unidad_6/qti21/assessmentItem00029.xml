@@ -60,7 +60,7 @@
 
   <modalFeedback identifier="correct_fb" outcomeIdentifier="FEEDBACKBASIC" showHide="show">
     <div>
-      <p>Correcto. La prima de riesgo es el exceso de retorno sobre la tasa libre de riesgo.</p>
+      <p>¡Muy bien! La prima de riesgo es el exceso de retorno sobre la tasa libre de riesgo.</p>
     </div>
   </modalFeedback>
 
